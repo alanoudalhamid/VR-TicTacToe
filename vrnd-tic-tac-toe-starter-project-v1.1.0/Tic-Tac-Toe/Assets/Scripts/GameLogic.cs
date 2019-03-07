@@ -135,7 +135,7 @@ public class GameLogic : MonoBehaviour {
                 boardRepresentation[i] = 1;
 
             }
-            Debug.Log(boardRepresentation[i]);
+            //Debug.Log(boardRepresentation[i]);
         }
         
         playerTurn = false;

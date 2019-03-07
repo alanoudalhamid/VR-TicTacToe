@@ -13,7 +13,7 @@ public class holdPiece : MonoBehaviour {
     void Update(){}
 
         public void grabPiece(PlayerPiece selectedPiece) {
-        if (selectedPiece.GetComponent<PlayerPiece>().hasBeenPlayed == false) {
+        if (selectedPiece.GetComponent<PlayerPiece>().hasBeenPlayed == false && GameLogic.GetComponent<GameLogic>().playerTurn) {
             pieceBeingHeld = selectedPiece;
             holdingPiece = true;
             selectedPiece.GetComponent<PlayerPiece>().inPlay();
